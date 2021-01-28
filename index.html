@@ -1,8 +1,39 @@
 <html>
 	<head>
 		<script src="stonkView.js"></script>
+		<style>
+			.stonk {
+				display: block;
+				width: 25%;
+				height: 50%;
+			}
+		</style>
 	</head>
 	<body>
-		<p>put the stonks here</p>
+		<!-- TradingView Widget BEGIN -->
+		<div class="tradingview-widget-container">
+		<div class="stonk" id="GME"></div>
+		
+		<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+		<script type="text/javascript">
+			new TradingView.widget(
+			{
+				"width": Math.floor(screen.width / 4),
+				"height": Math.floor(screen.height / 2),
+				"symbol": "GME",
+				"interval": "30",
+				"timezone": "Etc/UTC",
+				"theme": "dark",
+				"style": "0",
+				"locale": "en",
+				"toolbar_bg": "#f1f3f6",
+				"enable_publishing": false,
+				"allow_symbiol_change": true,
+				"container_id": "GME"
+			}
+  			);
+  		</script>
+		</div>
+		<!-- TradingView Widget END -->
 	</body>
 </html>
