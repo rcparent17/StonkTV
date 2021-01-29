@@ -1,39 +1,18 @@
 <html>
 	<head>
-		<script src="stonkView.js"></script>
+		
 		<style>
-			.stonk {
+			body, div {
+				background-color: black;
 				display: block;
 				width: 25%;
 				height: 50%;
+				margin: 0;
 			}
 		</style>
 	</head>
-	<body>
-		<!-- TradingView Widget BEGIN -->
-		<div class="tradingview-widget-container">
-		<div class="stonk" id="GME"></div>
-		
+	<body id="main">
 		<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-		<script type="text/javascript">
-			new TradingView.widget(
-			{
-				"width": Math.floor(screen.width / 4),
-				"height": Math.floor(screen.height / 2),
-				"symbol": "GME",
-				"interval": "30",
-				"timezone": "Etc/UTC",
-				"theme": "dark",
-				"style": "0",
-				"locale": "en",
-				"toolbar_bg": "#f1f3f6",
-				"enable_publishing": false,
-				"allow_symbiol_change": true,
-				"container_id": "GME"
-			}
-  			);
-  		</script>
-		</div>
-		<!-- TradingView Widget END -->
 	</body>
+	<script src="stonkView.js"></script>
 </html>
